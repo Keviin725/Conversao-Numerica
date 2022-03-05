@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/siz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Operacoes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="109dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operacoes"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/voltar2"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/somar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="soma" />
+
+            <RadioButton
+                android:id="@+id/subtracao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="subtracao" />
+
+            <RadioButton
+                android:id="@+id/multiplicacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="multiplicacao" />
+
+            <RadioButton
+                android:id="@+id/divisao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="divisao" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/val1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/insira_o_primeiro_valor"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/val2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/insira_o_segundo_valor"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <Button
+                android:id="@+id/operar"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/operar" />
+
+            <TextView
+                android:id="@+id/resp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
